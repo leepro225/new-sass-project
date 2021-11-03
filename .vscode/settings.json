@@ -1,0 +1,10 @@
+{
+    "liveSassCompile.settings.formats":[
+        // This is Default.
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/css" // ~ 은 해당 scss 폴더, 상대경로
+        }
+    ]
+}

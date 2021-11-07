@@ -1,0 +1,40 @@
+@import url("abstracts/mixins");
+@import url("abstracts/variables");
+@import url("base/base");
+
+// Nesting
+.box {
+
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+
+    @include pos-abs-center();
+
+    &, &-inner {
+        border: 3px solid $border-color;
+    }
+
+    @include mq('phone') {
+        background-color: red;
+    }
+
+    @include mq('tablet') {
+        background-color: blue;
+    }
+
+    // box-inner 
+    &-inner {
+
+        padding: 10px;
+        height: 40px;
+        background-color: $color-grey;
+
+        // box-inner-title
+        &-title {
+            font-size: 20px;
+            color: $color-white;
+            background-color: rgba($color-black, .5);
+        }
+    }
+}

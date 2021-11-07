@@ -4,7 +4,7 @@
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": "/css" // ~ 은 해당 scss 폴더, 상대경로
+            "savePath": "~/../css" // ~ 은 해당 scss 폴더, 상대경로
         }
     ],
     "liveSassCompile.settings.excludeList": [ 
